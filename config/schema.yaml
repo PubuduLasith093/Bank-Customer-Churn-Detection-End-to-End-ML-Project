@@ -1,0 +1,52 @@
+columns:
+  - customer_id: int
+  - credit_score: int
+  - country: category
+  - gender: category
+  - age: int
+  - tenure: int
+  - balance: int
+  - products_number: int
+  - credit_card: int
+  - active_member: int
+  - estimated_salary: int
+  - churn: int
+  
+
+numerical_columns:
+  - customer_id
+  - credit_score
+  - age
+  - tenure
+  - balance
+  - products_number
+  - credit_card
+  - active_member
+  - estimated_salary
+
+categorical_columns:
+  - country
+  - gender
+
+drop_columns:
+  - customer_id
+
+# for data transformation
+num_features:
+   credits_score
+   age
+   tenure
+   balance
+   products_number
+   credit_card
+   active_member
+   estimated_salary
+
+or_columns:
+  - gender
+
+oh_columns:
+  - country
+
+transform_columns:
+  - age
