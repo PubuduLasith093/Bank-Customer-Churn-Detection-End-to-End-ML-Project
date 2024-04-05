@@ -33,14 +33,14 @@ drop_columns:
 
 # for data transformation
 num_features:
-   credits_score
-   age
-   tenure
-   balance
-   products_number
-   credit_card
-   active_member
-   estimated_salary
+  - credit_score
+  - age
+  - tenure
+  - balance
+  - products_number
+  - credit_card
+  - active_member
+  - estimated_salary
 
 or_columns:
   - gender
