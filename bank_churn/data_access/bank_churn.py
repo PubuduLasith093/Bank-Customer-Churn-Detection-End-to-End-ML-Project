@@ -19,7 +19,7 @@ class bankchurn:
         try:
             self.mongo_client = MongoDBClient(database_name=DATABASE_NAME)
         except Exception as e:
-            raise USvisaException(e,sys)
+            raise BankChurnException(e,sys)
         
 
     def export_collection_as_dataframe(self,collection_name:str,database_name:Optional[str]=None)->pd.DataFrame:
@@ -39,4 +39,4 @@ class bankchurn:
             df.replace({"na":np.nan},inplace=True)
             return df
         except Exception as e:
-            raise USvisaException(e,sys)
+            raise BankChurnException(e,sys)
